@@ -1,0 +1,49 @@
+$bg-gray: #d6d7db;
+
+$placeholder-gray: #b2b1b4;
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .comment-card {
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+
+    background-color: #ecf0f4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+
+    padding: 1.3rem;
+    margin-bottom: 2rem;
+
+    .commenter-info {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+
+      .name {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .date {
+        color: black;
+        margin-left: auto;
+      }
+    }
+
+    .comment {
+      color: black;
+      font-size: 1.5rem;
+    }
+  }
+}

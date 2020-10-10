@@ -1,0 +1,120 @@
+.MyProfile{
+    height: 100vh;
+    width: 100%;
+    // background-color:black ;
+
+    .hamburger-button{
+        background-color: transparent;
+    }
+
+    .banner{
+        height: 30vh;
+        width: 100%;
+        position: relative;
+        .avatar-overlay{
+            position: absolute;
+            background: rgba(30,5,5, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .sexyDiv{
+        transform: translateY(-2.5rem);
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 3rem 3rem 0 0;
+        padding:2rem ;
+
+        .avatar{
+            position: absolute;
+            // width: 100%;
+            justify-content: center;
+            display: flex;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top:  -4rem;
+            img{
+            height:10rem;
+            margin: auto;
+            width: 10rem;
+            
+            object-fit: cover;
+            border-radius: 2.5rem;
+            }
+
+            .add{
+                position: absolute;
+                margin: auto;
+                transform: translateX(4rem);
+            }
+        }
+
+        .top{
+            display: flex;
+            flex-direction: column;
+            margin-top:5rem;
+            text-align: center;
+
+            .name{
+                font-weight: 700;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            .address{
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: grey;
+            }
+
+            .couple-couple{
+                display: flex;
+                justify-content: center;
+
+                .couple{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 1.4rem;
+                    margin:0 2rem;
+                    font-size: 1.4rem;
+                    span{
+                        color: lightgray;
+                        font-weight: 600;
+                    }
+                    .number{
+                        font-weight: 700;
+                        color: grey;
+                    }
+                }
+            }
+
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            *{
+                align-self: center;
+            }
+
+            .bottom-card{
+                text-align: center;
+                padding: 2rem;
+                font-size: 1.4rem;
+                font-weight: 700;
+                width: 100%;
+                color: grey;
+                border-bottom: 1px solid grey;
+            }
+        }
+    }
+
+
+}

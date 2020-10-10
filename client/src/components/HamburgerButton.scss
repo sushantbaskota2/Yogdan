@@ -1,0 +1,24 @@
+$bg-gray: #d6d7db;
+
+$placeholder-gray: #b2b1b4;
+$primary-color: #fcdf17;
+$accent-color: #f7a117;
+
+.hamburger-button {
+  cursor: pointer;
+  z-index: 100;
+  padding: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  position: fixed;
+  background-color: white;
+
+  span {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 20%;
+    color: $accent-color;
+  }
+}

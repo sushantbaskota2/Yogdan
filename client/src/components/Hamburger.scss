@@ -1,0 +1,90 @@
+$accent-color: #f7a117;
+
+.hamburger-container {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10001;
+  display: block;
+  width: 75%;
+  right: 0;
+  top: 0;
+
+  .hamburger-menu {
+    transition: transform 0.5s ease-in;
+    position: relative;
+    padding: 2rem;
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: hidden;
+
+    .hamburger-cross {
+      position: absolute;
+      right: 1rem;
+
+      top: 1rem;
+    }
+
+    .hamburger-top {
+      // margin-top: 2rem;
+      display: flex;
+
+      .img-wrapper {
+        margin-right: 1rem;
+
+        img {
+          height: 12rem;
+          width: 12rem;
+          border-radius: 50%;
+
+          object-fit: cover;
+        }
+      }
+
+      span {
+        align-self: center;
+        font-size: 1.6rem;
+        font-weight: bolder;
+      }
+    }
+
+    .hamburger-items {
+      height: 100%;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin: 2rem 0;
+      font-size: 2rem;
+      // justify-content: space-around;
+
+      .hamburger-item {
+        display: flex;
+        margin-top: 20%;
+
+        &.active {
+          color: $accent-color;
+        }
+
+        a {
+          display: flex;
+
+          * {
+            align-self: center;
+          }
+        }
+
+        span {
+          margin-left: 2rem;
+        }
+      }
+
+      .authentication-status {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

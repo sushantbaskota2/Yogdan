@@ -1,0 +1,24 @@
+$bg-gray: #d6d7db;
+$padding-sides: 1rem;
+$placeholder-gray: #b2b1b4;
+$primary-color: #de9f02;
+$accent-color: #cf955f;
+$reddish-yellow: #ee821d;
+$grey-text-color: rgb(34, 27, 27);
+
+.filler {
+  width: 100%;
+  margin: 1rem 0;
+
+  border-radius: 2.5rem;
+  position: relative;
+  background-color: $placeholder-gray;
+
+  .slider-fill {
+    width: 50%;
+    background: $primary-color;
+    position: absolute;
+    height: 100%;
+    border-radius: 2.5rem;
+  }
+}
